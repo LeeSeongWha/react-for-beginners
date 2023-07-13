@@ -1,7 +1,6 @@
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
-import { element } from 'prop-types';
 function App() {
   return (
     <Router>
