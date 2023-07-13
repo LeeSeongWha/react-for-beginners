@@ -18,23 +18,7 @@ function Detail() {
     getMovie();
   }, []);
 
-  return (
-    <div>
-      {loading ? (
-        <h1>Loading...</h1>
-      ) : (
-        <div>
-          <Movie
-            id={movie.id}
-            coverImg={movie.medium_cover_image}
-            title={movie.title}
-            summary={movie.summary}
-            genres={movie.genres}
-          />
-        </div>
-      )}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Detail;
