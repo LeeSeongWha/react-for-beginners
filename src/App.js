@@ -1,15 +1,15 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
 import { element } from 'prop-types';
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
-        <Route path={`${process.env.PUBLIC_URL}/movie/:id`}>
+        <Route path="/movie/:id">
           <Detail />
         </Route>
-        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}>
+        <Route path="/">
           <Home />
         </Route>
       </Switch>
