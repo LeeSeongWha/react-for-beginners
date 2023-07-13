@@ -1,9 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Movie from '../components/Movie';
 function Detail() {
-  const [loading, setLoading] = useState(true);
-  const [movie, setMovie] = useState([]);
   const { id } = useParams();
   const getMovie = async () => {
     const json = await (
@@ -15,7 +12,7 @@ function Detail() {
     getMovie();
   }, []);
 
-  return <div></div>;
+  return <h1>Detail</h1>;
 }
 
 export default Detail;
